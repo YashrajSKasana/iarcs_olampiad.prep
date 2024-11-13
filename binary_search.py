@@ -1,6 +1,6 @@
 from math import floor
 first: bool = True
-def binary_search(num_list: list[int] | list[tuple[int, int]], num_to_find: int) -> int | str:
+def binary_search(num_list: list[tuple[int, int]], num_to_find: int) -> int | str:
     if first:
         if num_list[0][1] == num_to_find: return 0
         first = False
