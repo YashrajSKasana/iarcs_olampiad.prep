@@ -11,9 +11,9 @@ def bubble_short(num_list):
         if not swapped:
             break
         unsorted_list_len -= 1
-    return num_list
 
 @lambda _: __name__ == "__main__" and _()
 def main():
     num_list = list(map(int, filter(None, input().split(" "))))
-    print(bubble_short(num_list))
+    bubble_short(num_list)
+    print(num_list)
